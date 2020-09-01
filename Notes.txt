@@ -1,0 +1,17 @@
+Ecrans:
+1_ Menu Princ
+2_ Nouv partie > choix nb joueurs > Jeu
+3_ Charger partie > choix partie > Jeu
+4_ Jeu
+
+
+Prio: 2 > 4 > 1 > 3
+
+
+Classes:
+- Joueur: score
+- Catégorie: points par item > interface !
+- Partie: nb tours, Joueur[], 
+
+
+1 tour = 1 joueur, 5 categ ?
