@@ -3,26 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/mainMenuFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.kumquat.barbu.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
+        android:id="@+id/mainMenuFragment"
+        android:name="com.kumquat.barbu_v2.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_mainMenuFragment_to_newGameMenuFragment"
+            app:destination="@id/newGameMenuFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.kumquat.barbu.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+        android:id="@+id/newGameMenuFragment"
+        android:name="com.kumquat.barbu_v2.NewGame.NewGameMenuFragment"
+        android:label="fragment_new_game_menu"
+        tools:layout="@layout/fragment_new_game_menu" />
 </navigation>
